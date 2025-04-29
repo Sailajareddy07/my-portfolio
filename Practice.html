@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="fade-in">Annareddy Sailaja</h1>
+            <p>Innovating with Code, Designing with Passion</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <div id="about" class="about-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hi! I'm <strong>A. Sailaja</strong>, a passionate Web Developer currently pursuing my BTECH at
+                        <strong>BV RAJU INSTITUTE OF TECHNOLOGY</strong>. My ambition is to secure a high-paying role in the
+                        IT sector, where I can leverage my skills to contribute meaningfully while continuously growing as
+                        a professional.
+                    </p>
+                    <p>
+                        I have a strong interest in <strong>Java, SQL, and frontend web development</strong>, with a focus
+                        on building dynamic, user-friendly applications and optimizing database management.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="picture.jpeg" alt="Profile Picture" class="profile-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-container"></div>
+      
+      
+                <h3>Real-Time Periocular-Based Face Recognition System</h3>
+                <p>
+                    This project focuses on developing a real-time periocular-based face recognition system for efficient and secure identification.
+                    It leverages advanced image processing and AI techniques to enhance accuracy and reliability.
+                    I am glad to share that my team and I have successfully published a research paper based on our work,
+                    highlighting our innovative approach and key contributions. This achievement reflects our dedication to advancing technology
+                    through research and development.
+                </p>
+                <ul>
+                    <li>Multi-Face Detection & Counting</li>
+                    <li>Adaptive Illumination Compensation</li>
+                    <li>Accessory & Occlusion Handling</li>
+                    <li>AI-Based Feature Extraction & Matching</li>
+                    <li>Secure and Efficient Identification</li>
+                    <li>Research Paper Publication</li>
+                </ul>
+                <a href="https://ieeexplore.ieee.org/document/10672821" class="view-project">View Project</a>
+            </div>
+        </div>
+    </section>
+        
+            <div class="project">
+                <h3>Smart Healthcare: Centralized and Scalable HMS</h3>
+                
+                <div class="image-container">
+                    <img src="hospital.png" alt="Project 1" class="project-image">
+                    <img src="hospital1.png" alt="Project 2" class="project-image">
+                </div>
+                <br>
+                <br>
+                <p>This project aims to develop a centralized and scalable Hospital Management System (HMS) that enhances healthcare operations and patient care. It integrates AI, IoT, and blockchain technologies to improve diagnostics, patient management, and security.</p>
+            
+                <ul>
+                    <li>AI-based Health Diagnosis</li>
+                    <li>Video Consultation Module</li>
+                    <li>Appointment & Inventory Management</li>
+                    <li>Billing & Secure Payment Processing</li>
+                    <li>Prescription & Lab Report Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <link rel="stylesheet" href="css/project.css">
+
+        <h2>Contact</h2>
+        <p>Email: <a href="22211a0521@bvrit.ac.in">22211a0521@bvrit.ac.in</a></p>
+        <p>Social Media:
+            <a href="https://www.codechef.com/users/sailaja07">CodeChef</a>,
+            <a href="https://github.com/Sailajareddy07">GitHub</a>,
+            <a href="https://www.linkedin.com/in/sailaja-annareddy-8b3395259/">LinkedIn</a>
+        </p>
+        <form action="https://formspree.io/f/xqaerqgd" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Annareddy Sailaja. All rights reserved.</p>
+        <p>Designed and Developed with ❤️ by A. Sailaja</p>
+        <p><em>"Turning ideas into reality through code."</em></p>
+        <p>Last Updated: March 2025</p>
+    </footer>
+    <script>
+        document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
