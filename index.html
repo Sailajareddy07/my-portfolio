@@ -27,6 +27,29 @@
             document.body.classList.toggle("dark-mode");
         });
     </script>
+
+<script>
+    fetch('projects.json')
+      .then(response => response.json())
+      .then(projects => {
+        const container = document.getElementById('project-list');
+        projects.forEach(project => {
+          const div = document.createElement('div');
+          div.innerHTML = `
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <a href="${project.link}" target="_blank">View Project</a>
+          `;
+          div.style.border = '1px solid #ccc';
+          div.style.padding = '10px';
+          div.style.marginBottom = '10px';
+          container.appendChild(div);
+        });
+      });
+  </script>
+  
+  
+
 </body>
 </html>
 <section> 
@@ -52,6 +75,11 @@
     </div>
 </section>
 <section id="projects">
+    <h2>My Projects</h2>
+    <div id="project-list"></div>
+  </section>
+  
+    
     <h2>Projects</h2>
     <div class="project-container">
         <div class="project">
